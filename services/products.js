@@ -5,7 +5,7 @@ var allCategories = _.times(5)
     .map(function (i) {
         return {
             name: 'Flower ' + (i + 1),
-            imageUrl: 'https://placeholdit.imgix.net/~text?txtsize=48&txt=Flower%20' + (i + 1) + '&w=640&h=330'
+            imageUrl: 'https://raw.githubusercontent.com/gabrielcastrodev/ChatBotHotel/master/images/Hotel_1.jpg'
         };
     });
 
