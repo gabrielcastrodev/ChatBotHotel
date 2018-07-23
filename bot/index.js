@@ -30,8 +30,8 @@ var bot = new builder.UniversalBot(connector, function (session) {
         .subtitle('welcome_subtitle')
         .images([
             new builder.CardImage(session)
-                .url('https://placeholdit.imgix.net/~text?txtsize=56&txt=Contoso%20Flowers&w=640&h=330')
-                .alt('contoso_flowers')
+                .url('http://www.guiabhr.com.br/blog/wp-content/uploads/2013/08/sia-300x135.jpg')
+                .alt('contoso_flowers'),
         ])
         .buttons([
             builder.CardAction.imBack(session, session.gettext(MainOptions.Shop), MainOptions.Shop),

@@ -3,16 +3,16 @@ var builder = require('botbuilder');
 
 var lib = new builder.Library('shop');
 lib.dialog('/', [
-    function (session) {
+    //function (session) {
         // Ask for delivery address using 'address' library
-        session.beginDialog('address:/',
-            {
-                promptMessage: session.gettext('provide_delivery_address', session.message.user.name || session.gettext('default_user_name'))
-            });
-    },
+        //session.beginDialog('address:/',
+            //{
+                //promptMessage: session.gettext('provide_delivery_address', session.message.user.name || session.gettext('default_user_name'))
+            //});
+    //},
     function (session, args) {
         // Retrieve address, continue to shop
-        session.dialogData.recipientAddress = args.address;
+        //session.dialogData.recipientAddress = args.address;
         session.beginDialog('product-selection:/');
     },
     function (session, args) {
