@@ -24,18 +24,18 @@ lib.dialog('/',
             next();
         },
         // Show Categories
-        CarouselPagination.create(products.getCategories, products.getCategory, categoryMapping, carouselOptions),
+      //  CarouselPagination.create(products.getCategories, products.getCategory, categoryMapping, carouselOptions),
         // Category selected
-        function (session, args, next) {
-            var category = args.selected;
-            session.send('choose_bouquet_from_category', category.name);
-            session.dialogData.category = category;
-            session.message.text = null;            // remove message so next step does not take it as input
-            next();
-        },
+       // function (session, args, next) {
+      //      var category = args.selected;
+      //      session.send('choose_bouquet_from_category', category.name);
+       //     session.dialogData.category = category;
+      //      session.message.text = null;            // remove message so next step does not take it as input
+       //     next();
+       // },
         // Show Products
         function (session, args, next) {
-            var categoryName = session.dialogData.category.name;
+            var categoryName = 'Executivo';
             CarouselPagination.create(
                 function (pageNumber, pageSize) { return products.getProducts(categoryName, pageNumber, pageSize); },
                 products.getProduct,
