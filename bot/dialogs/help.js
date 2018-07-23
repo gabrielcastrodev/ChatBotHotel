@@ -6,4 +6,4 @@ lib.dialog('/', builder.DialogAction.endDialog('thank_you'));
 // Export createLibrary() function
 module.exports.createLibrary = function () {
     return lib.clone();
-};
+}; //oii
