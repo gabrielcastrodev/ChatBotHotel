@@ -5,7 +5,7 @@ var allCategories = _.times(5)
     .map(function (i) {
         return {
             name: 'Flower ' + (i + 1),
-            imageUrl: 'https://raw.githubusercontent.com/gabrielcastrodev/ChatBotHotel/master/images/Hotel_1.jpg'
+            imageUrl: 'https://raw.githubusercontent.com/gabrielcastrodev/ChatBotHotel/master/images/Hotel_' + (i + 1) + '.jpg&w=640&h=330'
         };
     });
 
