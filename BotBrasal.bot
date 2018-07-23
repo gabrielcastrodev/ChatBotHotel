@@ -1,0 +1,15 @@
+{
+    "name": "BotBrasal",
+    "description": "",
+    "secretKey": "",
+    "services": [
+        {
+            "appId": "",
+            "id": "cc56aba0-8e9a-11e8-a864-7d10cea97971",
+            "type": "endpoint",
+            "appPassword": "",
+            "endpoint": "http://localhost:3978/api/messages",
+            "name": "http://localhost:3978/api/messages"
+        }
+    ]
+}
