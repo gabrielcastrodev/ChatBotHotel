@@ -1,11 +1,11 @@
 var _ = require('lodash');
 var Promise = require('bluebird');
 
-var allCategories = _.times(5)
+var allCategories = _.times(3)
     .map(function (i) {
         return {
-            name: 'Flower ' + (i + 1),
-            imageUrl: 'https://raw.githubusercontent.com/gabrielcastrodev/ChatBotHotel/master/images/Hotel_' + (i + 1) + '.jpg&w=640&h=330'
+            name: 'Quarto Executivo ' + (i + 1),
+            imageUrl: 'https://raw.githubusercontent.com/gabrielcastrodev/ChatBotHotel/master/images/Hotel_' + (i + 1) + '.jpg'
         };
     });
 
