@@ -1,7 +1,7 @@
 var _ = require('lodash');
 var Promise = require('bluebird');
 
-var allCategories = _.times(3)
+var allCategories = _.times(1)
     .map(function (i) {
         return {
             name: 'Quarto Executivo ' + (i + 1),
@@ -9,11 +9,11 @@ var allCategories = _.times(3)
         };
     });
 
-var allProducts = _.times(17)
+var allProducts = _.times(3)
     .map(function (i) {
         return {
-            name: 'Bouquet ' + (i + 1) + '\u2122',
-            imageUrl: 'https://placeholdit.imgix.net/~text?txtsize=48&txt=Bouquet%20' + (i + 1) + '&w=640&h=330',
+            name: 'Quarto Executivo ' + (i + 1) + '\u2122',
+            imageUrl: 'https://raw.githubusercontent.com/gabrielcastrodev/ChatBotHotel/master/images/Hotel_' + (i + 1) + '.jpg',
             price: Math.floor(Math.random() * 100) + 10 + .99
         };
     });
