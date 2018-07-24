@@ -7,8 +7,7 @@ var lib = new builder.Library('delivery');
 lib.dialog('date', [
     function (session, args, next) {
         builder.Prompts.choice(session, 'choose_delivery_date', [
-            session.gettext(Today),
-            session.gettext(Tomorrow)
+            session.gettext(Today)
         ]);
     },
     function (session, args) {
